@@ -16,6 +16,14 @@ class Divide
 {
     static void Main()
     {
-
+        int input = int.Parse(Console.ReadLine());
+        if (input % 7 == 0 && input % 5 ==0)
+        {
+            Console.WriteLine("true {0}", input);
+        }
+        else
+        {
+            Console.WriteLine("false {0}", input);
+        }
     }
 }

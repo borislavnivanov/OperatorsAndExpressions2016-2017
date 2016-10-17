@@ -29,6 +29,7 @@ class FourDigits
 {
     static void Main()
     {
+        int input = int.Parse(Console.ReadLine());
 
     }
 }

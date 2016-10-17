@@ -1,5 +1,6 @@
 ﻿/*
- * Write an expression that calculates rectangle’s area and perimeter by given width and height. The width and height should be read from the console.
+ * Write an expression that calculates rectangle’s area and perimeter by given width and height. The width and height 
+ * should be read from the console.
 
 Input
 
@@ -20,6 +21,11 @@ class Program
 {
     static void Main()
     {
-
+        double width = double.Parse(Console.ReadLine());
+        double height = double.Parse(Console.ReadLine());
+        double area = width * height;
+        double perimeter = (2 * width) + (2 * height);
+        string result = string.Format("{0:0.00}", area) + " " + string.Format("{0:0.00}", perimeter);
+        Console.WriteLine(result);
     }
 }
