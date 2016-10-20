@@ -30,6 +30,14 @@ class FourDigits
     static void Main()
     {
         int input = int.Parse(Console.ReadLine());
-
+        int a = (input / 1000);
+        int b = ((input / 100) % 10);
+        int c = ((input / 10) % 10);
+        int d = (input % 10);
+        int sum = a + b + c + d;
+        Console.WriteLine(sum);
+        Console.WriteLine("{0}{1}{2}{3}", d, c, b, a);
+        Console.WriteLine("{0}{1}{2}{3}", d, a, b, c);
+        Console.WriteLine("{0}{1}{2}{3}", a, c, b, d);
     }
 }
