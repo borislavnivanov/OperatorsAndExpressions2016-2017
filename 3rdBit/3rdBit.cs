@@ -13,6 +13,10 @@ class Program
 {
     static void Main()
     {
+        int number = int.Parse(Console.ReadLine());
+        short index = 3;
 
+        int mask = 1 << index;
+        Console.WriteLine(((number & mask) >> 3));
     }
 }

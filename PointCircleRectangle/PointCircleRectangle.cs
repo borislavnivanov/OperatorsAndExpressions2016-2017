@@ -13,7 +13,8 @@ class PointInACircle
         double y = double.Parse(Console.ReadLine());
         double r = 1.5;
         bool inCircle = ((x - 1) * (x - 1)) + ((y - 1) * (y - 1)) <= (r * r);
-        bool inRectangle = x >= 1 && x <= 6 && y >= -1 && y <= 2;
+        bool inRectangle = (x >= -1) && (x <= (-1 + 6)) && (y <= 1) && (y >= (1 - 6));
+        //x > -1 && x < 6 && y > -1 && y < 2;
 
         if (inCircle == true && inRectangle == true)
         {
